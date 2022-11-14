@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Search from '../components/Search';
 import Picture from '../components/Picture';
+import { v4 as uuidv4 } from 'uuid';
 
 const Homepage = () => {
   const [input, setInput] = useState('');
@@ -70,7 +71,7 @@ const Homepage = () => {
       <div className='pictures'>
         {data &&
           data.map((d) => {
-            return <Picture data={d} />;
+            return <Picture data={d} key={uuidv4()} />;
           })}
       </div>
       <div className='morePicture'>
