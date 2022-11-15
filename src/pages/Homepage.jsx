@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Search from '../components/Search';
 import Picture from '../components/Picture';
 import { v4 as uuidv4 } from 'uuid';
-require('dotenv').config();
 
 const Homepage = () => {
   const [input, setInput] = useState('');
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [cSearch, setCSearch] = useState('');
-  const auth = process.env.AUTH;
+  const auth = '563492ad6f91700001000001596557623a3148c0af4c7ddaed529b2f';
   const initialURL = 'https://api.pexels.com/v1/curated?page=1&per_page=15';
   const searchURL = `https://api.pexels.com/v1/search?query=${cSearch}&per_page=15&page=1`;
 
