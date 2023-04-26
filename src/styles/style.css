@@ -97,4 +97,46 @@ nav ul li a {
 }
 .pictures .picture .imgContainer img:hover {
   transform: scale(1.25);
+}
+
+.container__about {
+  margin: 2rem;
+  color: #4d4d4d;
+}
+.container__about h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.container__about h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  background-color: rgb(155, 107, 155);
+  color: #fff;
+}
+
+.about__item {
+  line-height: 1.5;
+}
+.about__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.about__list:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.about__link:link, .about__link:visited {
+  color: currentColor;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.about__link:hover, .about__link:active {
+  color: rgb(155, 107, 155);
+}
+
+strong {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
