@@ -1,3 +1,7 @@
+$theme-color: rgb(155, 107, 155);
+$theme-color--dark-1: rgb(73, 1, 73);
+$theme-color--dark-2: rgb(43, 0, 43);
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +21,26 @@ ul {
   list-style-type: none;
 }
 
+button {
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+  background-color: $theme-color;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $theme-color--dark-1;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.75rem;
+  }
+}
+
+.main-container {
+  min-height: 100vh;
+}
+
 .morePicture {
   display: flex;
   justify-content: center;
@@ -24,12 +48,8 @@ ul {
   padding: 4rem;
 
   button {
-    padding: 0.25rem 0.5rem;
-    font-size: 2rem;
     border: none;
-    background-color: rgb(73, 0, 73);
-    color: white;
-    cursor: pointer;
+    border-radius: 2px;
   }
 }
 

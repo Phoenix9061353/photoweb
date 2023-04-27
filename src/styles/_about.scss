@@ -14,7 +14,7 @@
     display: inline-block;
     padding: 0.25rem 0.5rem;
     border-radius: 2px;
-    background-color: rgb(155, 107, 155);
+    background-color: $theme-color;
     color: #fff;
   }
 }
@@ -40,7 +40,7 @@
     }
     &:hover,
     &:active {
-      color: rgb(155, 107, 155);
+      color: $theme-color;
     }
   }
 }

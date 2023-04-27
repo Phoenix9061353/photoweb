@@ -8,7 +8,7 @@ const Search = ({ search, setInput }) => {
 
   return (
     <div className='search'>
-      <input onChange={inputHandler} type='text' />
+      <input onChange={inputHandler} type='text' placeholder='Photo Type' />
       <button onClick={search}>Search</button>
     </div>
   );

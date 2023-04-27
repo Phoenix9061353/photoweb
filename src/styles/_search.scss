@@ -6,13 +6,31 @@
 
   input,
   button {
+    border: 2px solid $theme-color--dark-2;
+  }
+  input {
     font-size: 2rem;
     padding: 0.25rem;
-    border: 3px solid rgb(43, 0, 43);
+    width: 30%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    transition: all 0.3s;
+    &:focus {
+      width: 35%;
+      outline: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 35%;
+      font-size: 1.75rem;
+      &:focus {
+        outline: auto;
+      }
+    }
   }
   button {
-    background-color: rgb(73, 1, 73);
-    color: white;
-    cursor: pointer;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
 }

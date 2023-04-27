@@ -63,7 +63,7 @@ const Homepage = () => {
   }, [cSearch]);
 
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div className='main-container'>
       <Search
         search={() => {
           setCSearch(input);
