@@ -17,15 +17,11 @@
     transition: all 0.3s;
     &:focus {
       width: 35%;
-      outline: none;
     }
 
     @media screen and (max-width: 600px) {
       width: 35%;
       font-size: 1.75rem;
-      &:focus {
-        outline: auto;
-      }
     }
   }
   button {

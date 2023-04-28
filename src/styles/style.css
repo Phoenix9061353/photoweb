@@ -93,15 +93,11 @@ nav ul li:hover a {
 }
 .search input:focus {
   width: 35%;
-  outline: none;
 }
 @media screen and (max-width: 600px) {
   .search input {
     width: 35%;
     font-size: 1.75rem;
-  }
-  .search input:focus {
-    outline: auto;
   }
 }
 .search button {
