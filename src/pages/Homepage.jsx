@@ -31,6 +31,9 @@ const Homepage = () => {
   //Load more picture(if needed)
   const loadMorePic = async () => {
     let newURL;
+    const btnLoad = document.querySelector('.btn--load');
+    btnLoad.innerHTML = 'Loading...';
+    btnLoad.setAttribute('disabled', true);
     if (cSearch === '') {
       newURL = `https://api.pexels.com/v1/curated?page=${page}&per_page=15`;
     } else {
@@ -47,6 +50,8 @@ const Homepage = () => {
     const parseData = await dataFetch.json();
     //將後續的Pic data與之前的串接
     setData(data.concat(parseData.photos));
+    btnLoad.innerHTML = 'Load More';
+    btnLoad.removeAttribute('disabled');
   };
 
   //use useEffect to display default page
@@ -77,7 +82,9 @@ const Homepage = () => {
           })}
       </div>
       <div className='morePicture'>
-        <button onClick={loadMorePic}>Load More</button>
+        <button className='btn--load' onClick={loadMorePic}>
+          Load More
+        </button>
       </div>
     </div>
   );

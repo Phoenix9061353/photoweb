@@ -37,6 +37,15 @@ button {
   }
 }
 
+button:disabled {
+  &,
+  &:hover {
+    background-color: $theme-color;
+    color: #fff;
+    cursor: auto;
+  }
+}
+
 .main-container {
   min-height: 100vh;
 }

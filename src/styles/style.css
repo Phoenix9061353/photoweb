@@ -34,6 +34,12 @@ button:hover {
   }
 }
 
+button:disabled, button:disabled:hover {
+  background-color: rgb(155, 107, 155);
+  color: #fff;
+  cursor: auto;
+}
+
 .main-container {
   min-height: 100vh;
 }
