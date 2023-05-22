@@ -11,12 +11,12 @@ const About = () => {
             <li className='about__item'>
               <strong>Search bar</strong>
               <br />
-              輸入要找尋的照片種類並按下搜尋按鈕「Search」後，會加載出部分搜尋結果於畫面上（最多15張）
+              輸入要找尋的照片種類並按下搜尋按鈕「Search」後，會加載出部分搜尋結果於畫面上（每次最多15張）
             </li>
             <li className='about__item'>
               <strong>Load More</strong>
               <br />
-              按下後，當搜尋結果有更多圖片時，會再加載出一部分結果（最多15張）於畫面上
+              按下後，當搜尋結果有更多圖片時，會再加載出一部分結果（每次最多15張）於畫面上
             </li>
             <li className='about__item'>
               <strong>Image</strong>
