@@ -31,7 +31,7 @@ const Nav = () => {
     if (
       location.pathname === '/' ||
       location.pathname === '' ||
-      location.pathname === '/photoweb'
+      location.pathname === '/photoweb/'
     ) {
       toggle('about', 'home', 'home');
     } else {
