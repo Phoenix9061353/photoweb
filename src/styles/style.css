@@ -73,9 +73,17 @@ nav ul li a {
   color: white;
 }
 nav ul li:hover {
+  cursor: pointer;
   background-color: #fff;
 }
 nav ul li:hover a {
+  color: rgb(155, 107, 155);
+}
+
+nav ul li.active {
+  background-color: #fff;
+}
+nav ul li.active a {
   color: rgb(155, 107, 155);
 }
 

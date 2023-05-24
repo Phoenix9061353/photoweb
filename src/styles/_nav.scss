@@ -13,11 +13,19 @@ nav {
         color: white;
       }
       &:hover {
+        cursor: pointer;
         background-color: #fff;
         a {
           color: $theme-color;
         }
       }
     }
+  }
+}
+
+nav ul li.active {
+  background-color: #fff;
+  a {
+    color: $theme-color;
   }
 }
