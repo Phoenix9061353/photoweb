@@ -22,13 +22,13 @@ const Nav = () => {
     }
     document.querySelector(`#${target.id}`).classList.add('active');
     if (target.id === 'home') {
-      navigate('/photoweb');
+      navigate('/');
     } else if (target.id === 'about') {
       navigate('/about');
     }
   };
   useEffect(() => {
-    if (location.pathname === '/about') {
+    if (location.hash === '#/about') {
       toggle('home', 'about', 'about');
     } else {
       toggle('about', 'home', 'home');

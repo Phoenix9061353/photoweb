@@ -13,8 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path='/' element={<Homepage />} />
-        <Route path='/photoweb' element={<Homepage />} />
-        <Route path='/about' element={<About />} />
+        <Route exact path='/about' element={<About />} />
       </Routes>
       <Footer />
     </div>
