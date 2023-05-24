@@ -22,7 +22,7 @@ const Nav = () => {
     }
     document.querySelector(`#${target.id}`).classList.add('active');
     if (target.id === 'home') {
-      navigate('/');
+      navigate('/photoweb');
     } else if (target.id === 'about') {
       navigate('/about');
     }
