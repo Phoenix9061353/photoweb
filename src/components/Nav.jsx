@@ -28,14 +28,10 @@ const Nav = () => {
     }
   };
   useEffect(() => {
-    if (
-      location.pathname === '/' ||
-      location.pathname === '' ||
-      location.pathname === '/photoweb/'
-    ) {
-      toggle('about', 'home', 'home');
-    } else {
+    if (location.pathname === '/about') {
       toggle('home', 'about', 'about');
+    } else {
+      toggle('about', 'home', 'home');
     }
   }, []);
   return (
