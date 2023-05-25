@@ -1,6 +1,6 @@
 # Photo Web Project
 
-為 Udemy 線上課程 - 「2022 網頁開發全攻略」中的一個課程練習 project
+為 Udemy 線上課程 - 「[2022 網頁開發全攻略](https://www.udemy.com/course/html5-css3-z/)」中的一個課程練習 project
 
 ## 主要內容
 
