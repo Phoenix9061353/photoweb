@@ -62,29 +62,19 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
+  gap: 0.15rem;
+  padding: 0.5rem 0;
 }
-nav ul li {
-  transition: all 0.3s;
-  padding: 0.5rem 1rem;
-}
-nav ul li a {
+nav ul a:link, nav ul a:visited {
   transition: all 0.3s;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
 }
-nav ul li:hover {
-  cursor: pointer;
-  background-color: #fff;
-}
-nav ul li:hover a {
+nav ul a:hover, nav ul a:active, nav ul a.active:link, nav ul a.active:visited {
   color: rgb(155, 107, 155);
-}
-
-nav ul li.active {
   background-color: #fff;
-}
-nav ul li.active a {
-  color: rgb(155, 107, 155);
 }
 
 .search {
